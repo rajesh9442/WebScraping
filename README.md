@@ -22,22 +22,7 @@
 
 ### 3. Structured Data Model
 
-//json
-{
-  "id": "sha256_hash(url + title)",
-  "source": "website_name",
-  "url": "https://example.com/job/123",
-  "title": "Senior Data Scientist",
-  "description": "Job requirements...",
-  "posted_date": "2023-10-01T00:00:00Z",
-  "location": "Remote",
-  "company": "Tech Corp",
-  "salary": "$120k - $150k",
-  "metadata": {
-    "scraped_at": "2023-10-05T12:34:56Z",
-    "tags": ["full-time", "remote"]
-  }
-}
+<pre markdown> ```json { "id": "sha256_hash(url + title)", "source": "website_name", "url": "https://example.com/job/123", "title": "Senior Data Scientist", "description": "Job requirements...", "posted_date": "2023-10-01T00:00:00Z", "location": "Remote", "company": "Tech Corp", "salary": "$120k - $150k", "metadata": { "scraped_at": "2023-10-05T12:34:56Z", "tags": ["full-time", "remote"] } } ``` </pre>
 
 - **Justification**: JSON (stored in MongoDB) accommodates schema flexibility across sources while enabling nested fields (e.g., metadata). A unique id prevents duplicates.
 
