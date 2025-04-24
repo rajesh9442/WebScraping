@@ -22,7 +22,7 @@
 
 ### 3. Structured Data Model
 
-```json
+//json
 {
   "id": "sha256_hash(url + title)",
   "source": "website_name",
