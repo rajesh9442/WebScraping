@@ -42,15 +42,11 @@
 
 - **Justification**: JSON (stored in MongoDB) accommodates schema flexibility across sources while enabling nested fields (e.g., metadata). A unique id prevents duplicates.
 
----
-
 ### 4. Data Integrity
 
 - **Duplicates**: Hash-based id checks before insertion.  
 - **Missing Values**: Flag fields as null or apply default values (e.g., "N/A").  
 - **Validation**: Use schema validators (e.g., Cerberus) to enforce data types (e.g., ISO dates).
-
----
 
 ### 5. Tools & Libraries
 
@@ -62,6 +58,7 @@
 | MongoDB    | Schema-less storage for heterogeneous data.                                    |
 | Redis      | Caching frequently accessed pages to reduce rescraping.                        |
 
+---
 
 ## Exercise 2: Data Processing & Optimization
 
@@ -76,8 +73,6 @@
    - Convert dates to ISO format.
    - Normalize categorical fields (e.g., "FT" → "Full-Time").
 
----
-
 ### 2. Machine Learning Preparation
 
 - **Text Data**:
@@ -88,16 +83,12 @@
   - Embeddings for high cardinality fields.
 - **Feature Engineering**: Derive features like `"days_since_posted"`.
 
----
-
 ### 3. Scraper Optimization
 
 - **Concurrency**: Scale with Scrapy’s asynchronous requests or Celery for distributed tasks.
 - **Caching**: Use Redis to store HTML responses for 24 hours.
 - **APIs**: Switch to official APIs (e.g., LinkedIn API) if available.
 - **Monitoring**: Logging and alerts for blocked requests or CAPTCHAs.
-
----
 
 ### 4. Long-Term Efficiency Strategies
 
