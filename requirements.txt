@@ -1,0 +1,8 @@
+scrapy
+playwright
+pymongo
+redis
+cerberus
+beautifulsoup4
+spacy
+transformers
